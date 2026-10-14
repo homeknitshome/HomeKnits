@@ -1,0 +1,11 @@
+{
+  "id": "/",
+  "name": "HomeKnits",
+  "short_name": "HomeKnits",
+  "description": "Discover beautiful knitwear, cozy sweaters, cardigans, and accessories from retailers around the world.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#FFFFFF",
+  "theme_color": "#FFFFFF"
+}
