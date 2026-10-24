@@ -62,5 +62,20 @@ function checkout(){if(!Object.keys(cart).length)return alert("Your cart is empt
 document.getElementById("search").addEventListener("input",render);
 document.querySelectorAll(".chip").forEach(b=>b.onclick=()=>{document.querySelectorAll(".chip").forEach(x=>x.classList.remove("active"));b.classList.add("active");category=b.dataset.cat;render()});
 render();updateCart();
+
+
+<script>
+
+if ("serviceWorker" in navigator) {
+
+  window.addEventListener("load", () => {
+
+    navigator.serviceWorker.register("/service-worker.js")
+
+      .catch((error) => console.error("Service worker registration failed:", error));
+
+  });
+
+}
 </script>
 </body></html>
